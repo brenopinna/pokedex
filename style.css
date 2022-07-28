@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+html{
+    font-size: clamp(0.8em, 3vw, 1em);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 400px;
+
+    margin: 10px 0;
+
+    position: relative;
+}
+
+.pokedex{
+    width: 100%;
+}
+
+.pokemon-img{
+    text-align: center;
+    position: absolute;
+    bottom: 54%;
+    right: 36%;
+    height: 15%;
+    max-width: 35%;
+}
+
+.dados-pokemon{
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 38%;
+    right: 25%;
+    font-size: 1.7rem;
+    max-width: 55%;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#pokemon-input{
+    position: absolute;
+    top: 67%;
+    right: 18.5%;
+    width: 60%;
+    height: 2.3rem;
+    padding: 0 10px;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 0.3rem;
+    box-shadow: -1px 1px 0 1px #7F7F7F, -4px 3px 0 rgb(71,71,71);
+}
+
+.buttons{
+    position: absolute;
+    bottom: 15%;
+    right: 18.5%;
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    height: 2.3rem;
+}
+
+.buttons button{
+    width: 50%;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 0.3rem;
+    box-shadow: -1px 1px 0 1px #7F7F7F, -4px 3px 0 rgb(71,71,71);
+    transition: .2s;
+}
+
+.buttons button:active{
+    box-shadow: none;
+    transform: translate(-4px, 3px);
+    background-color: #cccccc;
+}
